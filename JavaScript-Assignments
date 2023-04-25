@@ -1,0 +1,93 @@
+#JavaScript Assignments
+//1.Create a page with header, footer, body and left side navigation with 2 links-Ads and View
+
+//2. Add link: Should display a page with 4-5 input fields (textbox, dropdown, checkbox et
+
+labels along with Submit button Clicking the Submit button should save the data (You can une
+windows session Storage to save the data) User can enter any of records Valdetions p
+
+fields is nice to have feature.
+
+//3. "View link: Should display a table of all the records entered on 'Add page
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+<style>
+nav{
+    float:left;
+    width:20%;
+    height:300px;
+    background:#ccc;
+    padding:20px;
+}
+nav u1{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav u1 li{
+    padding:10px;
+    margin-bottom:10px;
+    background-color:#4CAF50;
+    color:white;
+    text-align:center;
+}
+nav u1 li a{
+    color:white;
+    text-decoration:none;
+}
+section{
+    float:left;
+    width:80%;
+    height:300px;
+    padding:20px;
+}
+footer{
+    background-color:#333;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+</style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>
+            <nav>
+                <u1>
+                    <li><a href="#">Ads</a></li>
+                    <li><a href="#">View</a></li>
+                    </u1>
+            </nav>
+            <section>
+                <h2>
+                    Add Page
+                </h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"<br><br>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option> 
+                        <option value="other">Other</option>
+                        </select><br><br>
+                        <label for="newsletter">Subscribe to Newsletter:</label> 
+                        <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+                        <input type="submit" value="Submit">     
+                </form>
+                </section> 
+</body>
+</html>
